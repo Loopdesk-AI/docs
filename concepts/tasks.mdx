@@ -1,0 +1,61 @@
+---
+title: 'Tasks'
+description: 'Tasks are specific assignments completed by Agents, forming the fundamental building blocks of AI workflows.'
+icon: 'list-check'
+---
+
+## Task Structure
+
+A Task consists of essential attributes:
+
+- **Description**: Clear statement of what needs to be done
+- **Expected Output**: Detailed description of the desired outcome
+- **Agent Assignment**: Optional specification of which agent handles the task
+- **Tools**: Optional list of tools/resources the agent can use
+
+## Execution Methods
+
+Tasks can be executed in two primary ways:
+
+- **Sequential**: Tasks run in defined order
+- **Hierarchical**: Tasks are assigned based on agent roles and expertise
+
+## Task Dependencies
+
+Tasks can be interconnected through:
+
+- **Context**: Tasks can use outputs from other tasks as input
+- **Asynchronous Execution**: Tasks can run in parallel when needed
+- **Dependencies**: Tasks can wait for other tasks' completion before starting
+
+## Output Handling
+
+Task outputs are managed through the TaskOutput class with multiple formats:
+
+- **Raw Output**: Default text-based output
+- **JSON Output**: Structured data in JSON format
+- **Pydantic Models**: Strongly typed data structures
+
+## Configuration Methods
+
+Tasks can be created in two ways:
+
+- **YAML Configuration**: Recommended approach for cleaner, maintainable task definitions
+- **Direct Code Definition**: Alternative method using Python code directly
+
+## Tool Integration
+
+Tasks can be enhanced with:
+
+- **Custom Tools**: Specific tools assigned for particular tasks
+- **Tool Override**: Ability to override agent's default tools
+- **Multiple Tools**: Support for using multiple tools in a single task
+
+## Task Management
+
+Important management features include:
+
+- **Callbacks**: Functions executed after task completion
+- **File Output**: Ability to save results to files
+- **Directory Creation**: Automatic creation of output directories
+- **Validation**: Built-in mechanisms to ensure task integrity

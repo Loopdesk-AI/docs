@@ -1,0 +1,26 @@
+---
+title: 'Planning'
+description: 'The planning feature is a powerful capability that enhances task execution through automated planning.'
+icon: 'map'
+---
+
+## Core Functionality
+
+Planning automatically generates step-by-step task plans before each league iteration. An AgentPlanner processes all league information and integrates detailed plans into task descriptions.
+
+## Implementation
+
+**Activation**
+The planning feature can be enabled by simply adding `planning=True` to your League configuration.
+
+**LLM Integration**
+Planning utilizes ChatOpenAI LLM models for task planning. You have the flexibility to specify which ChatOpenAI LLM model you want to use for the planning process.
+
+## Workflow
+
+1. Before each iteration begins, the league information is processed
+2. The AgentPlanner creates detailed step-by-step logic
+3. The generated plan gets incorporated into each task's description
+4. Tasks are executed according to the planned sequence
+
+This systematic approach ensures that tasks are well-organized and executed efficiently within the framework.

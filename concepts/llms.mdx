@@ -1,0 +1,54 @@
+---
+title: 'LLMs'
+description: 'Large Language Models (LLMs) are sophisticated AI systems that form the backbone of agents, enabling them to process and generate human-like text'
+icon: 'engine'
+---
+
+## Key Components
+
+**Context Window**
+The context window defines the amount of text an LLM can process simultaneously. While larger windows (128K tokens) enable more extensive context processing, they typically come with higher costs and slower processing times.
+
+**Temperature Control**
+Temperature settings range from 0.0 to 1.0:
+
+- Lower values (around 0.2): Produce focused, consistent outputs
+- Higher values (around 0.8): Generate more creative and varied responses
+
+## Model Capabilities
+
+| Model | Context Window | Primary Use Case |
+| --- | --- | --- |
+| GPT-4 | 8,192 tokens | Complex reasoning, high accuracy |
+| GPT-4 Turbo | 128,000 tokens | Document analysis, long content |
+| GPT-4o & GPT-4o-mini | 128,000 tokens | Cost-effective processing |
+
+## Optimization Features
+
+**Context Management**
+
+- Token counting and tracking
+- Automatic content summarization
+- Task splitting for large contexts
+
+**Token Usage Guidelines**
+
+- Small tasks: Up to 4K tokens
+- Medium tasks: 4K-32K tokens
+- Large tasks: Over 32K tokens
+
+## Best Practices
+
+**Performance Optimization**
+
+- Monitor token usage regularly
+- Implement rate limiting
+- Use caching when possible
+- Set appropriate max_tokens limits
+
+**Security Measures**
+
+- Store API keys in environment variables
+- Avoid committing keys to version control
+- Implement regular key rotation
+- Separate development and production keys

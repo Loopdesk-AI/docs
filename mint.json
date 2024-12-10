@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Loopdesk docs",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:anil@loopdesk.ai"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.loopdesk.com"
   },
   "tabs": [
     {
@@ -58,14 +58,34 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Core Concepts",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "concepts/agents",
+        "concepts/tasks",
+        "concepts/leagues",
+        "concepts/llms",
+        "concepts/memory",
+        "concepts/tools",
+        "concepts/processes",
+        "concepts/collaboration",
+        "concepts/planning"
+      ]
+    },
+    {
+      "group": "Deprecated",
+      "pages": [
+        "others/markdown",
+        "others/code",
+        "others/images",
+        "others/settings",
+        "others/navigation",
+        "others/reusable-snippets"
+      ]
+    },
+    {
+      "group": "Advanced",
+      "pages": [
+        "advanced/processing"
       ]
     },
     {
@@ -84,8 +104,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://x.com/loopdesk",
+    "github": "https://github.com/loopdesk-ai",
+    "linkedin": "https://linkedin.com/company/loopdesk-ai"
   }
 }

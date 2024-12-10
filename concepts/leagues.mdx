@@ -1,0 +1,46 @@
+---
+title: 'Leagues'
+description: 'A League is a collaborative group of agents working together to accomplish specific tasks'
+icon: 'medal'
+---
+
+**Agents and Tasks**
+
+- Leagues consist of multiple agents working on assigned tasks
+- Tasks are executed according to a defined process flow
+
+**Process Types**
+
+- Sequential Process: Tasks are executed linearly, one after another
+- Hierarchical Process: A manager agent coordinates and validates task outcomes
+
+## Key Features
+
+**Output Management**
+
+- Leagues provide structured outputs
+- Supports multiple formats including raw strings, JSON, and Pydantic models
+- Includes task outputs and token usage metrics
+
+**Memory and Caching**
+
+- Supports short-term, long-term, and entity memory
+- Caching capability for storing tool execution results
+- Enhances efficiency by reducing redundant task execution
+
+**Execution Control**
+
+- Multiple kickoff methods available:
+    - Standard kickoff for sequential execution
+    - Kickoff_for_each for individual agent execution
+    - Async variations for asynchronous processing
+
+## Configuration Options
+
+- Language settings with customizable defaults
+- Configurable maximum requests per minute (RPM)
+- Optional callbacks for monitoring task execution
+- Planning capabilities with AgentPlanner integration
+- Customizable logging and output options
+
+The framework provides extensive flexibility in managing agent collaboration while maintaining efficient task execution and resource utilization.
