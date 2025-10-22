@@ -30,6 +30,7 @@
       "group": "Guide",
       "pages": [
         "introduction",
+        "releases",
         "getting-started",
         "core-features",
         "advanced-features",
