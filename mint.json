@@ -31,6 +31,7 @@
       "pages": [
         "introduction",
         "releases",
+        "features",
         "getting-started",
         "core-features",
         "chat-based-editing",
