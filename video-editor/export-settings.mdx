@@ -1,0 +1,88 @@
+---
+title: Export settings
+description: 'What each setting in the Output Inspector does, and which to choose.'
+---
+
+The **Output Inspector** gives you detailed control over your exported video. If you're not sure what to choose, start with the recommended settings below.
+
+<Frame>
+  <img src="/images/Output Inspector.png" alt="The Output Inspector, with settings for format, encoding, quality (CRF), resolution, encoding speed, audio codec, color space and audio, followed by the output estimate and the Start Export button" />
+</Frame>
+
+## Recommended settings for most videos
+
+For uploading to social platforms or sharing online, these settings are widely compatible:
+
+| Setting | Recommended |
+|---|---|
+| Format | MP4 |
+| Video encoding | H.264 |
+| Resolution | 1080p, or 4K if your source footage is 4K |
+| Audio codec | AAC |
+| Color space | Default |
+
+## Format
+
+The format is the container for your video file.
+
+| Format | When to use it |
+|---|---|
+| MP4 | The most widely supported format. A good default for social platforms, websites and most devices. |
+| WebM | An open format designed for the web. |
+| MKV | A flexible container. It isn't supported by as many players and platforms. |
+| MOV | The Apple QuickTime format. Common in professional editing workflows. |
+
+## Video encoding
+
+The codec compresses your video.
+
+| Codec | When to use it |
+|---|---|
+| H.264 | The most compatible codec. A good default. |
+| H.265 | Produces smaller files at similar quality to H.264, but some devices and platforms don't support it. |
+| VP8 | An older web codec, commonly used with WebM. |
+| VP9 | A newer, more efficient web codec, commonly used with WebM. |
+| ProRes | A high-quality codec for professional editing. It produces very large files. |
+
+## Quality (CRF)
+
+CRF (constant rate factor) sets the balance between quality and file size. Set it with the slider, or type a number. In Loopdesk, the CRF slider runs from 0 to 51.
+
+- A **lower** value, toward 0, gives **higher** quality and generally a **larger** file.
+- A **higher** value, toward 51, gives a smaller file with lower quality.
+
+Use the estimated file size in the Output Inspector to check the effect before you render.
+
+## Resolution
+
+Choose from:
+
+- 720p
+- 1080p
+- 1440p
+- 4K
+
+Higher resolutions look sharper but produce larger files and may take longer to render.
+
+## Encoding speed
+
+Encoding speed ranges from **Ultrafast** to **Very Slow**. Generally, slower settings compress more efficiently, giving a smaller file at the same quality, but they take longer to render.
+
+## Audio
+
+| Setting | Options |
+|---|---|
+| Audio codec | AAC or MP3. AAC is the more common choice for video. |
+| Include audio | Turn this off to export a video with no sound. |
+
+## Color space
+
+| Option | When to use it |
+|---|---|
+| Default | Leave this selected unless you have a specific reason to change it. |
+| BT.709 | The standard color space for HD video. |
+| BT.2020 NCL | A wide-color-gamut color space. Use it only if your workflow and platform require it. |
+
+## Output estimate
+
+The Output Inspector shows the expected **resolution**, **frame rate**, **file size** and **duration** of your export. Check these before you render.

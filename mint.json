@@ -18,31 +18,97 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:anil@loopdesk.ai"
+      "url": "https://docs.loopdesk.ai/help/contact-support"
     }
   ],
   "topbarCtaButton": {
     "name": "Go to Loopdesk",
-    "url": "https://loopdesk.com"
+    "url": "https://app.loopdesk.ai"
   },
   "navigation": [
     {
-      "group": "Guide",
+      "group": "Getting Started",
       "pages": [
-        "introduction",
-        "releases",
-        "features",
-        "getting-started",
-        "core-features",
-        "chat-based-editing",
-        "advanced-features",
-        "exporting-and-sharing"
+        "getting-started/introduction",
+        "getting-started/navigation",
+        "getting-started/workflow-overview"
+      ]
+    },
+    {
+      "group": "Storyteller",
+      "pages": [
+        "storyteller/overview",
+        "storyteller/generate-a-film",
+        "storyteller/generation-stages",
+        "storyteller/your-films"
+      ]
+    },
+    {
+      "group": "Video Editor",
+      "pages": [
+        "video-editor/overview",
+        "video-editor/add-media",
+        "video-editor/text-and-motion",
+        "video-editor/timeline",
+        "video-editor/clip-properties",
+        "video-editor/aura",
+        "video-editor/aura-suggest-edits",
+        "video-editor/export-video",
+        "video-editor/export-settings"
+      ]
+    },
+    {
+      "group": "Calendar and Scheduling",
+      "pages": [
+        "scheduling/calendar",
+        "scheduling/schedule-a-post",
+        "scheduling/youtube-post-settings"
+      ]
+    },
+    {
+      "group": "Social Accounts",
+      "pages": [
+        "social-accounts/overview",
+        "social-accounts/connect-youtube"
+      ]
+    },
+    {
+      "group": "Analytics",
+      "pages": ["analytics/channel-insights"]
+    },
+    {
+      "group": "Cloud Storage",
+      "pages": ["cloud-storage/overview"]
+    },
+    {
+      "group": "Account and Billing",
+      "pages": [
+        "account/settings",
+        "account/credits-and-billing"
       ]
     },
     {
       "group": "Help",
-      "pages": ["limitations", "troubleshooting", "support"]
+      "pages": [
+        "help/faq",
+        "help/limitations",
+        "help/contact-support"
+      ]
     }
+  ],
+  "redirects": [
+    { "source": "/introduction", "destination": "/getting-started/introduction" },
+    { "source": "/releases", "destination": "/getting-started/introduction" },
+    { "source": "/features", "destination": "/getting-started/introduction" },
+    { "source": "/getting-started", "destination": "/getting-started/introduction" },
+    { "source": "/core-features", "destination": "/video-editor/overview" },
+    { "source": "/advanced-features", "destination": "/video-editor/overview" },
+    { "source": "/chat-based-editing", "destination": "/video-editor/aura" },
+    { "source": "/exporting-and-sharing", "destination": "/video-editor/export-video" },
+    { "source": "/limitations", "destination": "/help/limitations" },
+    { "source": "/troubleshooting", "destination": "/help/faq" },
+    { "source": "/help/troubleshooting", "destination": "/help/faq" },
+    { "source": "/support", "destination": "/help/contact-support" }
   ],
   "footerSocials": {
     "x": "https://x.com/loopdeskAI",
